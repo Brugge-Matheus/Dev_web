@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+div {
+    box-shadow: inset 0 0 2px black;
+    padding: 10px;
+    background-color: rgb(94, 158, 20);
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(2,50%) / repeat(2,50%);
+    height: 100vh;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+    
+}
+
