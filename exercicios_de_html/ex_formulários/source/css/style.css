@@ -1,0 +1,22 @@
+input {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+.form_group {
+    text-align: center;
+}
+
+.form_radio {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+ 
+
+.centralizar {
+    text-align: center;
+}

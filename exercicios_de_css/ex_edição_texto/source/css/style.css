@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Kastella";
+    src: url("../font/KastellaScript_PERSONAL_USE_ONLY.otf");
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap'); */
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Sombra, valor vertical, horizontal, motion blur e cor */
+.sombra-1{
+    text-shadow: 1px 1px 3px black;
+}
+
+.nova-font {
+    font-family: "Kastella";
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.fonte-google {
+    font-family: 'Sevillana';
+}
+
+.tranformar-1{
+    text-transform: lowercase;
+}
+
+.tranformar-2 {
+    text-transform: uppercase;
+}
+
+.tranformar-3 {
+    text-transform: capitalize;
+}

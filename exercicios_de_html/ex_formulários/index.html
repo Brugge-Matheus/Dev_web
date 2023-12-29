@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+             <h3>Formulário</h3>
+
+             <input type="hidden" name="campo_escondido" value="escondido">
+
+            <!-- Slider de range -->
+             <div class="form_group">
+                <input type="range" name="campo_intervalo" oninput="mostrar(this.value)" step="100" max="1000">
+                <p id="valor_range"></p>
+             </div>
+
+             <!-- Username -->
+            <div class="form_group">
+             <label for="campo_usuario">E-mail:</label>
+                <input type="email" name="campo_usuario" id="campo_usuario" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form_group">
+                <label for="campo_senha">Senha:</label>
+                <input type="password" name="senha" id="campo_senha" required>
+            </div>
+
+            <!-- radio btn -->
+            <div class="form_group">
+                <label>
+                    <input type="radio" name="genero" id="masculino" value="Masculino">
+                    Masculino
+                </label>
+            </div>
+
+            <div class="form_group">
+                <label>
+                    <input type="radio" name="genero" id="feminino" value="Feminino">
+                    Feminino
+                </label>
+            </div>
+
+            <!-- checkbox -->
+            <div class="form_group">
+                <label>
+                    <input type="checkbox" name="receber_noticias" id="receber_noticias" checked value="Sim">Desejo receber novas noticias</label>
+            </div>
+
+            <!-- select -->
+            <div class="form_group">
+                <label for="">Selecione uma opção</label>
+                <select name="campo_seleção"  required >
+                    <optgroup label="Países">
+                        <option value=""></option>
+                        <option value="Pt">Portugal</option>
+                        <option value="Br">Brazil</option>
+                        <option value="Nl">Holanda</option>
+                        <option value="Usa">Estados Unidos</option>
+                    </optgroup> 
+                    <optgroup label="outros países">
+                        <option value="Pt">Alemanha</option>
+                        <option value="Br">Africa</option>
+                    </optgroup>  
+                </select>
+            </div>
+
+            <!-- Submit -->
+            <div class="form_group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        
+    </div>
+
+    <script>
+        function mostrar(value) {
+            document.getElementById("valor_range").innerHTML=value;
+        }
+    </script>
+</body>
+</html>

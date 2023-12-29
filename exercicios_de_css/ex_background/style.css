@@ -1,0 +1,37 @@
+:root {
+    --cor1: cyan;
+}
+
+body {
+    background: linear-gradient(rgb(71,77,97), rgb(17,18,24));
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.container-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-background > div {
+    margin-top: 10px;
+    height: 700px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.espaco-1 {
+    background: linear-gradient(180deg, red, var(--cor1));
+}
+
+.espaco-2 {
+    /* background: linear-gradient(90deg, blue, green); */
+    background: linear-gradient(to left, blue, green);
+}
+
+.espaco-3 {
+    background: linear-gradient(to right, red, blue);
+}

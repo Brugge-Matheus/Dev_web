@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.container-principal {
+    background-color: rgb(114, 110, 110);
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 8px;
+    border: solid white 0.5px;
+}
+
+.container-principal > a{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.4em;
+}
+
+.container-principal > a:hover {
+    color: rgb(29, 29, 204);
+}
+
+.container_secundario {
+    background-color: rgb(114, 110, 110);
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 8px;
+    border: solid white 0.5px;
+}
+
+.container_secundario > p, h1{
+    margin-top: 20px;
+}

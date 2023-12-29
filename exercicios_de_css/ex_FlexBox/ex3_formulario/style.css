@@ -1,0 +1,118 @@
+:root {
+    --cor-azul-background: rgb(62, 216, 243);
+    --cor-rosa-background: rgb(214, 37, 199);
+    --cor-link-form: rgb(66, 154, 184);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right bottom, var(--cor-azul-background), var(--cor-rosa-background));
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 40vh;
+    height: 50vh;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+/* botao close */
+.login-close {
+    font-size: 22px;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+/* texto login */
+.login-title {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+/* inputs */
+.input-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    
+}
+
+.input-form > label {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(70, 69, 69);
+}
+
+.input-form > input {
+    padding: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    
+}
+
+/* link esqueceu a senha */
+.forgot-password {
+    font-size: 0.9em;
+    font-weight: lighter;
+    color: var(--cor-link-form);
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+/* botao submit */
+.login-btn {
+    border-radius: 5px;
+    border: 1px solid rgba(233, 43, 116, 0.568);
+    padding: 12px 0;
+    /* border: none; */
+    color: rgb(70, 69, 69);
+    font-weight: bold;
+    font-size: 1em;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, var(--cor-azul-background), var(--cor-rosa-background));
+    color: white;
+    border-radius: 0px;
+}
+
+/* texto e link de seja um membro */
+.not-a-member {
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+.not-a-member  a {
+    text-decoration: none;
+    color: var(--cor-link-form);
+}
+
+
+
+

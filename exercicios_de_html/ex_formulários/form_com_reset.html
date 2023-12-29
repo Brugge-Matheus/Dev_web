@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="source/css/style.css">
+</head>
+<body>
+
+    <div class="form_container">
+        <h3 class="centralizar">Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+            <!-- Usuário -->
+            <div class="form_group">
+                <label for="campo-usuario">Usuário</label>
+                <input type="text" name="campo_usuario" id="campo-usuario" required>
+            </div>
+
+            <!-- Senha -->
+            <div class="form_group">
+                <label for="campo-senha">Senha</label>
+                <input type="password" name="campo_senha" id="campo-senha" required>
+            </div>
+
+            <!-- radio box -->
+            <div class="form_radio" >
+                <label>
+                    <input type="radio" name="opcao">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="opcao">
+                    Feminino
+                </label>
+            </div>
+            
+
+            <!-- Botão submit -->
+            <div class="form_group">
+                <button type="button">Botão</button>
+                <input type="reset" value="Limpar" accesskey="l" title="alt + l" >
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    
+    <script src="source/js/script.js"></script>
+</body>
+</html>

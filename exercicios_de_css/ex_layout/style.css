@@ -1,0 +1,53 @@
+.container-noticia {
+    background-color: lightgrey;
+    padding: 20px;
+    overflow: auto;
+}
+
+.destaque {
+    float: left;
+    margin-right: 10px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.posicao {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.container-position {
+    background-color: yellow;
+    width: 00px;
+    height: 100px;
+    margin: 100px;
+    
+}
+
+/* Arquivo position html */
+div {
+    width: 500px;
+    padding: 30px;
+    position: sticky;
+
+}
+
+.area1 {
+    /* left: 50px;
+    top: 60px; */
+    background-color: green;
+}
+
+.area2 {
+    /* left: 80px;
+    top: 80px; */
+    background-color: yellow;
+}

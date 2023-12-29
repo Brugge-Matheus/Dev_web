@@ -1,0 +1,21 @@
+table, th, td {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    
+}
+
+table {
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.459);
+}
+
+.cor-fundo {
+    background-color: yellow;
+}
+
+.largura-tabela {
+    width: 100%;
+}
+
