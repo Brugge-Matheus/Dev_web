@@ -104,8 +104,8 @@ form {
 .not-a-member {
     font-weight: lighter;
     display: flex;
-    justify-content: center;
-    margin-top: 10vh;
+    align-self: center;
+    margin-top: auto;
 }
 
 .not-a-member  a {
