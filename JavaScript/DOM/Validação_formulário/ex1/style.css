@@ -1,0 +1,9 @@
+input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}

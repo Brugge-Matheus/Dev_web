@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impedir ação de eventos padrão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://google.com.br" target="_blank">Ir para o Google</a>
+
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post" class="form">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" class="input_usu">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" class="input_usu">
+
+        <input type="submit" value="Enviar" class="submit_btn">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
