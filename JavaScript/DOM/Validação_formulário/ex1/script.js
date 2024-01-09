@@ -1,24 +1,45 @@
-// Validação de formulários com Negação de click e alerta
+// Validação de formulários com cancelamento da função do botão e mensagem de erro
 
-    document.querySelector('.form_login').addEventListener('submit', (e) => {
-       //Buscar valores dos campos
-      let usuario = e.target.usuario.value
-      let senha = e.target.senha.value
-      let submit = true
+// Usuario
+document.querySelector(`input[name='usuario']`).addEventListener('keyup', () => {
+    if(document.querySelector(`input[name='usuario']+ span`) !== null){
+    document.querySelectorAll('.error').forEach(e => e.remove());
+    }
+})
 
-      // Validar usuario
-      if(usuario === ''){
-          submit = false
-      }
+// Usuario
+document.querySelector(`input[name='senha']`).addEventListener('keyup', () => {
+    if(document.querySelector(`input[name='senha']+ span`) !== null){
+    document.querySelectorAll('.error').forEach(e => e.remove());
+    }
+})
 
-      // Validar senha
-      if(senha === ''){
-          submit = false
-      }
+document.querySelector('.form_login').addEventListener('submit', (event) => {
+    const usuario = event.target.usuario.value;
+    const senha = event.target.senha.value;
+    let submit = true;
 
-      // Verificar se o formulário pode ser submetido
-      if(!submit){
-          e.preventDefault()
-          window.alert('Favor preencher todos os dados')
-      }
-  })
+     //Apagar mensagens de erro anteriores
+     document.querySelectorAll('.error').forEach(e => e.remove());    
+
+    // Validação do usuário
+    if (usuario === '') {
+        submit = false;
+
+        const erroUsuario = document.querySelector(`input[name='usuario']`);
+        erroUsuario.insertAdjacentHTML('afterend', `<span class='error'>Usuário é obrigatório</span>`);
+    }
+
+    // Validação da senha
+    if (senha === '') {
+        submit = false;
+
+        const erroSenha = document.querySelector(`input[name='senha']`);
+        erroSenha.insertAdjacentHTML('afterend', `<span class='error'>Senha é obrigatória</span>`);
+    }
+
+    // Cancela a submissão do formulário se houver erro
+    if (!submit) {
+        event.preventDefault();
+    }
+});
