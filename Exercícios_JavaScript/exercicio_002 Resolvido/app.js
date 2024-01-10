@@ -11,14 +11,22 @@ Enunciado: CONTADOR COM INTERVALO DE VALORES
 
 let valor = 0;
 
-const h1_valor = document.querySelector('#valor')
+const h1_valor = document.getElementById('valor')
 
 document.querySelector('#btn_incremento').addEventListener('click', () => {
-    if(valor > 10) return;
-    h1_valor.textContent = valor++
+    if(valor == 10){
+        return;
+    } else {
+        valor++;
+        h1_valor.textContent = valor
+    }
 })
 
-document.querySelector('#btn_decremento').addEventListener('click', () => {
-    if(valor < -10) return;
-    h1_valor.textContent = valor--
+ document.querySelector('#btn_decremento').addEventListener('click', () => {
+    if(valor == -10){
+        return
+    } else {
+        valor--;
+        h1_valor.textContent = valor
+    }
 })
