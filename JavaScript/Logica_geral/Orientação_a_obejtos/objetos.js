@@ -63,19 +63,44 @@ Idade.mostrarIdade();
 
 //------------//
 
-// Tambem é possivel utilizar parâmetros para declara as propriedades
+// Tambem é possivel utilizar parâmetros para declara as propriedades e fazer validações dos valores
 
-function Animal(nome,peso,idade){
+function Animal(nome,peso) {
+    if(nome == undefined) {
+        nome = 'Informação não fornecida'
+    }
     this.nome = nome
-    this.peso = peso
-    this.idade = idade
 
-    let apresentacao = window.alert(`o animal é ${nome} ele tem ${peso} quilos e ${idade} anos de idade`)
+    if(peso == undefined) {
+        peso = 'Informação não fornecida'
+    }
+    this.peso = peso
+
+    let apresentacao = window.alert(`O ${nome} possui ${peso}Kg!`)
 }
 
-const animal = new Animal()
-const animal2 = new Animal()
-
+let animal =  new Animal()
+ let animal2 =  new Animal('Gato', '4')
 
 animal.apresentacao
-animal2.apresentacao
+ animal2.apresentacao
+
+
+//------------//
+
+// Passar um objeto como parâmetro de uma função como mostrado abaixo
+
+function Pessoa() {
+    this.returnAnimal = (animal) => {
+        return animal
+    }
+}
+
+function Animal() {
+    this.raca = 'Bulldog'
+}
+
+let pessoa = new Pessoa()
+let mostrarRaca = new Animal()
+
+window.alert(pessoa.returnAnimal(mostrarRaca).raca)
