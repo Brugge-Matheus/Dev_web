@@ -1,4 +1,5 @@
 // Funções - São trechos de códigos que são rodados apenas quando são chamados, podendo ser chamado a qualuqer momento no código
+// O return é utilizado para retornar os valors desejados, porem o return finaliza todos os processos da função, ou seja nada mais abaixo dela sera rodado
 
 function teste() {
     console.log('Chamando a função teste'); // Função simples sendo criado, quando for chamada apresentara esse código

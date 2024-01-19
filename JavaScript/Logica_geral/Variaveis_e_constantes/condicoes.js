@@ -4,7 +4,7 @@
 // Else - Significa 'Caso contrario', Se nada for verdade ele aplica o código definido
 /* */
 
-let numero = 15;
+ let numero = 15;
 let nome = 'Kleber'
 
 if(nome == 'Matheus'){
@@ -31,7 +31,6 @@ if(numero == 10){
     console.log('Afirmação verdadeira!');
 }
 
-
 // Outros tipos de validações
 // && - As duas validações precisam ser verdadeiras
 // || - Apenas uma das validações precisa ser verdadeira
@@ -44,4 +43,11 @@ if(nome == 'Kleber' && numero == 10){
 
 if(nome == 'Kleber' || numero == 20){
     console.log('Afirmação verdadeira!');
+}
+
+//---------//
+
+let idade = 21
+if ((idade < 19 && idade == 18) || idade == 21) {
+    console.log('Boa');
 }

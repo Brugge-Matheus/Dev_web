@@ -10,4 +10,19 @@ nome == 'Matheus' ? console.log('Verdadeiro') : console.log('falso')
 
 let numero = 10
 let resultado = numero <= 10 ? 'True' : 'False'
-console.log(resultado);
+console.log(resultado); 
+
+//---------//
+
+let numbers = [10, 20, 30]
+ let text = [`Primeiro número é menor igual a 10`, `Primeiro número é maior que 10`]
+
+
+
+ const result = numbers[0] <= 10 ? text[0] : text[1];
+
+ console.log(result);
+
+ //---------//
+
+ 
