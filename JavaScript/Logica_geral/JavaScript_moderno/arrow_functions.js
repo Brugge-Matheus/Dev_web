@@ -20,3 +20,8 @@ newTestes((name) => {
     console.log(`My name is ${name}`); // Chamando uma função e um texto como parâmtro de uma função
 
 }, 'Texto de exemplo') 
+
+//---------//
+
+const somar = (x, y) => x + y
+console.log(somar(10, 5));

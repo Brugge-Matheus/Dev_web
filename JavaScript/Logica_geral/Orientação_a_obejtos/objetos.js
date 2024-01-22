@@ -14,9 +14,9 @@
 
   // Tambem podemos adicionar um array em um objeto
   let novaPessoa = [{
-      'nome': 'Kleber',
-      'idade': '35 anos',
-      'profissão': 'cozinheiro',
+      nome: 'Kleber',
+      idade: '35 anos',
+      profissão: 'cozinheiro',
     
   }]
 
