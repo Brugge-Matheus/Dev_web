@@ -1,4 +1,4 @@
-let colors = ['Blue', 'Red', 'Green', 'Yellow']
+/*let colors = ['Blue', 'Red', 'Green', 'Yellow']
 console.log(colors[0]);
 
 let numbers = [10, 20, 30, 40]
@@ -40,7 +40,7 @@ fruits.join('-'); // Transforma o array em uma string e utiliza o parâmetro com
 fruits[fruits.length - 1] = 'Pitaia' 
 
 console.log(fruits.length); // Mostra a quantidade de itens que tem o array
-console.log(fruits);
+console.log(fruits);*/
 
 //------------//
 
@@ -54,4 +54,16 @@ frutas.reverse() // Reverte a ordem dos itens, combinado com o sort transforma n
 console.log(frutas);
 
 //------------//
+
+// Ordenação de array com objetos
+
+let cars = [
+    {brand: 'Fiat', year: '2022'},
+    {brand: 'Bmw', year: '2018'},
+    {brand: 'Ferrari', year: '2020'}
+]
+
+cars.sort((a,b) => a.year - b.year); // Pode retornar 0,1 ou -1
+
+console.log(cars);
 
