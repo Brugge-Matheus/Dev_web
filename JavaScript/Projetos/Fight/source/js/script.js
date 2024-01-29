@@ -1,5 +1,5 @@
 const char = new Sorcerer('\uD83E\uDDD9 Matheus')
-const monster = new LittleMonster()
+const monster = new BigMonster()
 
 const log = new Log(document.querySelector('.log'))
 
