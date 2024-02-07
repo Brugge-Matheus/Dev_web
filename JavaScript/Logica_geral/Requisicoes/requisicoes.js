@@ -49,7 +49,7 @@ Oque é um Callback
 
 
 // Requisição GET utilizando Async e Await
-const CallApi = async () => {
+/*const CallApi = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const json = await response.json();
     window.alert(`Titile of the first post: ${json[0].title}`)
@@ -79,3 +79,26 @@ async function insert() {
 
 document.querySelector('button').addEventListener('click', CallApi);
 document.querySelector('#newPost').addEventListener('click', insert);
+*/
+// Utilizando Promise
+function cathTemp() {
+    return new Promise(function(resolve, reject) {
+        console.log('Pegando temperatura...');
+
+        setTimeout(() => {
+            console.log('22 na sombra');
+
+        }, 2000);
+    })
+}
+
+// Usando a Promise
+let temp = cathTemp()
+temp.then(function(temperatura) {
+    console.log(`Temperatura ${temperatura}`);
+
+})
+
+temp.catch(function(error) {
+    console.log('Erro ao executar');
+})

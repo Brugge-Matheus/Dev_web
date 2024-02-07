@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Callbacks e Requisições</title>
-    <script src="JSON.js" defer></script>
+    <script src="fetch.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            max-width: 200px;
+        }
+    </style>
 </head>
 <body>
-    <button>Fazer CallBack</button>
+        <!-- Requisições -->
+    <!-- <button>Fazer CallBack</button>
 
-    <button id="newPost">Inserir novo post</button>
+    <button id="newPost">Inserir novo post</button> -->
+
+    <!-- Fetch -->
+    <button onclick="loadPosts()">Carregar posts</button>
+    <button onclick="addPosts()">Adicionar posts</button>
+
+    <div id="postArea">Carregando...</div>
 </body>
 </html>
