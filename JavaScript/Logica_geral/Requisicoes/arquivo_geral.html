@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Callbacks e Requisições</title>
-    <script src="fetch.js" defer></script>
+    <script src="thumbnail.js" defer></script>
     <style>
         body {
             display: flex;
@@ -15,6 +15,10 @@
         button {
             max-width: 200px;
         }
+
+        img {
+            width: 500px;
+        }
     </style>
 </head>
 <body>
@@ -24,9 +28,23 @@
     <button id="newPost">Inserir novo post</button> -->
 
     <!-- Fetch -->
-    <button onclick="loadPosts()">Carregar posts</button>
+    <!-- <button onclick="loadPosts()">Carregar posts</button>
     <button onclick="addPosts()">Adicionar posts</button>
 
-    <div id="postArea">Carregando...</div>
+    <div id="postArea">Carregando...</div> -->
+
+        
+    <!-- upload_arquivos
+    <input type="file" id="arq">
+
+    <button onclick="uploadArchive()">Enviara</button> -->
+
+
+    <!-- thumbnail -->
+    <input type="file" accept="image/*" id="img">
+
+    <button onclick="View()">Mostrar</button>
+
+    <div id="imgArea"></div>
 </body>
 </html>
