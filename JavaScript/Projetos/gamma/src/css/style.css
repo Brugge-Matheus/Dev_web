@@ -1,0 +1,392 @@
+:root {
+    --text-color: #EA1F33;
+    --text-color2: #CC1A2C;
+    --text-color3: #A10010;
+    --text-color4: #42475E;
+    --text-color5: #646981;
+    --text-color6: #bfc0c9;
+    --bg: #F4F4F7;
+    --bg1: #EEEEEE;
+    --hover-red: #9e0211;
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Ubuntu', sans-serif;
+}
+
+input {
+    outline-style: none;
+}
+
+textarea {
+    outline-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.menu {
+    height: 6vh;
+    background-color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-categoria {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: rgba(7, 7, 7, 0.164);
+    height: 6vh;
+}
+
+.item-categoria {
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+}
+
+.more-itens {
+margin-right: 15px;
+}
+
+.sanduiche {
+    margin-left: 15px;
+}
+
+.nav-itens {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    /* border: 0.5px solid grey; */
+    padding: 7px 30px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+nav .nav-itens:hover {
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+/* Container */
+
+.container {
+    background-color: #F4F4F7;
+    height:70px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-house {
+    color: var(--text-color);
+}
+
+.fa-chevron-right {
+    color: var(--text-color6);
+    margin-right: 15px;
+}
+
+.contato {
+    text-decoration: none;
+    color: var(--text-color6);
+}
+
+.link-container {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Page */
+.screen {
+    display: flex;
+    height: 94vh;
+}
+
+/* Sac area */
+.sac {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    background-color: white; 
+}
+
+.sac-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.sac-title img {
+    margin-right: 15px;
+}
+
+.sac > span {
+    width: 1px;
+    height: 80%;
+    border: 1px solid var(--text-color6);
+}
+
+
+.text h4 {
+    color: var(--text-color5);
+    font-size: 20px;
+}
+
+.text span {
+    color: var(--text-color4);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/* sac info */
+
+.sac-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sac-info i {
+    color: var(--text-color);
+}
+
+.sac-info h3 {
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: var(--text-color4);
+}
+
+.sac-info a {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--text-color5);
+    transition: ease 0.5s;
+}
+
+.sac-info a:hover {
+    color: var(--text-color2);
+}
+
+.sac-info a i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Trabalhe conosco area */
+
+.trabalhe-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na vertical */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 300px; /* Ajusta o espaçamento superior */
+    width: 90%;
+    margin-bottom: 20%;
+}
+
+.trabalhe-img img {
+    width: 400px;
+    margin-left: 150px;
+    margin-bottom: 20px; 
+}
+
+.trabalhe-text {
+    margin-left: 50px;
+}
+
+.trabalhe-text h2 {
+    color: var(--text-color4);
+    margin-bottom: 15px;
+}
+
+.trabalhe-text p {
+    color: var(--text-color5);
+    line-height: 1.5;
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.trabalhe-text a {    
+    border-radius: 5px; 
+    margin-left: 50px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+.curriculo-btn {
+    background-color: #EA1F33;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;  
+    font-size: 1.1em;
+}
+
+.curriculo-btn i {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.vagas-btn {
+    color: #EA1F33;
+    font-size: 1.2em;
+}
+
+.fa-circle-arrow-right {
+    color: #EA1F33;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+
+
+/* Image area */
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 700px;
+    height: auto;
+    
+}
+
+.right-site {
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.726);
+}
+
+/* Fale conosco */
+.Newcontainer {
+    background-color: var(--bg1);
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.fale-conosco h2 {
+    color: var(--text-color4);
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.fale-conosco a {
+    text-decoration: none;
+    color: var(--text-color5);
+    margin-bottom: 25px;
+    text-align: justify;
+    transition: ease 0.5s;
+}
+
+.fale-conosco a:hover {
+    color: #EA1F33;
+}
+
+.fale-conosco a i {
+    color: #EA1F33;
+    margin-right: 10px;
+}
+
+
+
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-form {
+    background-color: white;
+    border-radius: 5px;
+    width: 450px;
+}
+
+form label input {
+    width: 450px;
+    color: var(--text-color4);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-top: 10px;
+    transition: ease 0.3s;
+}
+
+form textarea {
+    width: 450px;
+    border: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form button {
+    width: 450px;
+    margin-top: 10px;
+    padding: 20px 10px;
+    font-size: 1.1em;
+    background-color: #EA1F33;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+form button:hover {
+    background-color: #9c1825;
+}
+
+nav a {
+    color: var(--text-color6);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: ease 0.3s;
+}
+
+.nav-form a:hover {
+    background-color: #EA1F33;
+    color: white;
+    border-radius: 5px;
+}
