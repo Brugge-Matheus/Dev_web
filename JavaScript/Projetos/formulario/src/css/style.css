@@ -31,7 +31,7 @@ textarea {
 body {
     background-color: var(--bg);
     height: 100vh;
-    width: 100vw;
+   
 }
 
 
@@ -49,7 +49,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .fale-conosco {
@@ -69,6 +70,7 @@ body {
     color: var(--text-color5);
     margin-bottom: 25px;
     text-align: justify;
+    font-size: 1.2em;
     transition: ease 0.5s;
 }
 
@@ -77,6 +79,7 @@ body {
 }
 
 .fale-conosco a i {
+    font-size: 1.2em;
     color: #EA1F33;
     margin-right: 10px;
 }
@@ -87,48 +90,56 @@ body {
 .formulario {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .nav-form {
     background-color: white;
     border-radius: 5px;
-    width: 500px;
-    padding: 12px; 
+    max-width: 445px;
+    padding: 10px 0px;
 }
 
 .nav-form a {
     color: var(--text-color6);
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 31px;
+    padding: 10px 27px;
     transition: ease 0.3s;
 }
 
 .nav-form a:hover {
     background-color: #EA1F33;
-    color: white;
+    color: var(--text-color6);
     border-radius: 5px;
 }
 
 form label input {
-    width: 500px;
+    width: 445px;
     color: var(--text-color4);
     font-weight: bold;
     border: none;
     border-radius: 5px;
     padding: 20px 10px;
     margin-top: 10px;
-    transition: ease 0.3s;
+    
+}
+
+.error {
+    color: red;
+    text-align: justify;
+    margin-top: 6px;
 }
 
 form textarea {
-    width: 500px;
+    color: black;
+    width: 445px;
     border: none;
     padding: 20px 10px;
     border-radius: 5px;
@@ -136,8 +147,9 @@ form textarea {
     margin-top: 10px;
 }
 
-form button {
-    width: 500px;
+form #btn {
+    color: white;
+    width: 445px;
     margin-top: 10px;
     padding: 20px 10px;
     font-size: 1.1em;
@@ -148,8 +160,14 @@ form button {
     transition: ease 0.3s;
 }
 
-form button:hover {
+form #btn:hover {
     background-color: #9c1825;
+}
+
+.active-item {
+    background-color: #EA1F33;
+    border-radius: 5px;
+    color: white;
 }
 
 
