@@ -32,6 +32,8 @@ pizzaJson.map((item, index) => {
         q('.pizzaInfo--price').innerHTML = `R$${pizzaJson[key].price.toFixed(2).replace('.', ',')}`
         qs('.pizzaInfo--size').forEach((size, sizeIndex) => {
             
+            
+            size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
         })
 
         // Modal animations
