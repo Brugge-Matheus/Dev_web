@@ -1,4 +1,13 @@
-:root 
+:root {
+    --text-colorRed: #EA1F33;
+    --text-colorRed2: #CC1A2C;
+    --text-color1: #42475E;
+    --text-color2: #646981;
+    --text-color3: #bfc0c9;
+    --bg: #F4F4F7;
+    --bg1: #EEEEEE;
+    --hover-red: #9e0211;
+}
 
 * {
     box-sizing: border-box;
@@ -69,7 +78,7 @@ h1 {
 }
 .pizza-item {
     background-color: rgba(0, 0, 0, 0.11);
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     max-width:250px;
