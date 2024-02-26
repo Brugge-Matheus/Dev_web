@@ -1,11 +1,34 @@
 // Loop While - adicionando a condicional em seguida o código que deseja deixar em looping
 
-let contador = 0;
+let control = 0;
 
-while(contador < 10) {
-    console.log(contador);
+while(control <= 5) {
+    console.log(control);
 
-    contador++
+    control++;
 }
+
+//-----//
+function randomNumber(min, max) {
+    const random = Math.random() * (max - min) + min;
+    return Math.floor(random);
+}
+
+let random = randomNumber(1, 50)
+
+while(random !== 10) {
+    random = randomNumber(1, 50);
+    console.log(random);
+}
+
+//---------//
+
+// do While - Executa ao menos uma vez
+do {
+    console.log(control);
+
+    control++;
+} while (control < 10);
+
 
 

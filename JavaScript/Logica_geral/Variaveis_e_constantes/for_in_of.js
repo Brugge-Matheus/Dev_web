@@ -1,6 +1,6 @@
 // for normal
 
-/*for(let i = 1; i < 4; i++) {
+for(let i = 1; i < 4; i++) {
     console.log(i);
 }
 
@@ -9,7 +9,7 @@ const fruits = ['Maça', 'Pera', 'Uva', 'Banana']
 
 for(let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
-}*/
+}
 
 //------------//
 
