@@ -122,6 +122,8 @@ q('.pizzaInfo--addButton').addEventListener('click', () => {
 
 // Update cart
 function upDateCart() {
+    q('.menu-openner span').innerHTML = cart.length;
+
     q('aside').classList.add('show');
     q('.cart').innerHTML = '';
 
@@ -158,7 +160,12 @@ function upDateCart() {
 
             //qtd itens cart
             cartItem.querySelector('.cart--item-qtmenos').addEventListener('click', () => {
-                (cart[i].qtd > 1) ? cart[i].qtd-- : cart.splice(i, 1);
+                if(cart[i].qtd > 1) {
+                    cart[i].qtd--;
+
+                } else {
+                    cart.splice(i, 1);
+                }
 
                 upDateCart();
             });
@@ -181,7 +188,20 @@ function upDateCart() {
 
     } else {
         q('aside').classList.remove('show');
+        closeMobileCart();
     }
 };
+
+q('.menu-openner').addEventListener('click', showMobileCart)
+q('.cart--area .menu-closer').addEventListener('click', closeMobileCart)
+
+function showMobileCart() {
+    cart.length > 0 ? q('aside').style.left = '0' : null;
+    
+}
+
+function closeMobileCart() {
+    q('aside').style.left = '100%';
+}
 
 

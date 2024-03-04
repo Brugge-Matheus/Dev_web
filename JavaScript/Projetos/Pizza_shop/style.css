@@ -1,6 +1,7 @@
 :root {
-    --text-colorRed: #EA1F33;
+    --text-colorRed: #ea1f33f8;
     --text-colorRed2: #CC1A2C;
+    --text-color0: #42475e;
     --text-color1: #42475E;
     --text-color2: #646981;
     --text-color3: #bfc0c9;
@@ -13,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color:#EEE;
+    background-color:var(--bg1);
     font-family: Arial, Helvetica, sans-serif;
     font-size:15px;
     display:flex;
@@ -30,30 +31,43 @@ header {
     top:0;
     right:0;
     height:60px;
-    background-color:#399ade;
+    background-color:var(--text-colorRed);
     display:none;
     justify-content: flex-end;
     align-items: center;
 }
 .menu-openner {
+    cursor: pointer;
     margin-right: 15px;
     font-size: 26px;
-    background-color: #a9dcff;
+    background-color: var(--text-color3);
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
+
+.menu-openner i {
+    color: var(--text-color0);
+    margin: auto;
+    font-size: 0.9em;  
+}
+
 .menu-openner span {
     margin-right:10px;
 }
 .menu-closer {
+    cursor: pointer;
     width:32px;
     height:32px;
     display:none;
     font-size: 30px;
 }
 
+.menu-closer i {
+    color: var(--text-color0);
+}
+
 aside {
-    background-color:#9ccbe6;
+    background-color:var(--bg);
     width:0vw;
     font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
@@ -71,13 +85,18 @@ main {
 }
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 100px;
 }
 .pizza-area {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: auto;
 }
 .pizza-item {
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -107,7 +126,7 @@ h1 {
     height:50px;
     line-height:50px;
     border-radius:25px;
-    background-color:#388bc5;
+    background-color:var(--text-color1);
     text-align:center;
     color:#FFF;
     font-size:22px;
@@ -116,11 +135,11 @@ h1 {
     transition:all ease .2s;
 }
 .pizza-item a:hover .pizza-item--add {
-    background-color:#244c88;
+    background-color:var(--text-color2);
 }
 .pizza-item--price {
     font-size:15px;
-    color:#333;
+    color: #42475e;
     margin-top:5px;
 }
 .pizza-item--name {
@@ -131,7 +150,7 @@ h1 {
 }
 .pizza-item--desc {
     font-size:13px;
-    color:#555;
+    color:#42475e;
     margin-top:10px;
 }
 
@@ -141,7 +160,7 @@ h1 {
     top:0;
     bottom:0;
     right:0;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color: var(--bg);
     display:none;
     transition: all ease .5s;
     justify-content: center;
@@ -150,7 +169,7 @@ h1 {
 }
 .pizzaWindowBody {
     width:900px;
-    background-color:#FFF;
+    background-color:white;
     border-radius:10px;
     box-shadow:0px 0px 15px #999;
     display:flex;
@@ -182,20 +201,21 @@ h1 {
 }
 .pizzaInfo .pizzaInfo--desc {
     font-size:15px;
-    color:#999;
+    color: var(--text-color0) ;
     margin-top:10px;
     font-family:'Lato',Helvetica,Arial;
 }
 .pizzaInfo--sector {
-    color:#CCC;
+    color: var(--text-color0);
     text-transform: uppercase;
     font-size:14px;
     margin-top:30px;
     margin-bottom:10px;
 }
 .pizzaInfo--sizes {
+    gap: 5px;
     display:inline-flex;
-    border-radius:10px;
+    border-radius:5px;
     overflow:hidden;
 }
 .pizzaInfo--size {
@@ -207,10 +227,11 @@ h1 {
     cursor:pointer;
 }
 .pizzaInfo--size:hover {
-    background-color:#CCC;
+    background-color: var(--text-colorRed);
+    color: white;
 }
 .pizzaInfo--size.selected {
-    background-color:#399ade;
+    background-color: var(--text-colorRed);
     color:#FFF;
     transition: 0.3s;
 }
@@ -222,6 +243,7 @@ h1 {
     color:#999;
     font-weight: normal;
 }
+
 .pizzaInfo--price {
     display:flex;
     align-items:center;
@@ -253,30 +275,45 @@ h1 {
     color:#000;
 }
 .pizzaInfo--addButton {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top:30px;
     padding:20px 30px;
-    border-radius:20px;
-    background-color:#48d05f;
-    color:#FFF;
+    border-radius: 5px;
+    border: 2px solid var(--text-colorRed);
+    color:var(--text-color0);
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
+    transition: ease 0.3s;
 }
 .pizzaInfo--addButton:hover {
-    background-color:#32a345;
+    background-color:var(--text-colorRed);
+    color: white;
 }
 .pizzaInfo--cancelButton {
     display:inline-block;
     cursor:pointer;
 }
 .pizzaInfo--cancelMobileButton {
+    border: 2px solid var(--text-colorRed);
+    color: var(--text-color0);
+    border-radius: 3px;
+    width: 100px;
+    margin: auto;
     cursor: pointer;
     display:none;
     height:40px;
     text-align:center;
     line-height: 40px;
     margin-bottom:30px;
+    transition: ease 0.3s;
 }
+
+.pizzaInfo--cancelMobileButton:hover {
+    background-color: var(--text-colorRed);
+    color: white;
+}
+
 .cart {
     margin-bottom:20px;
 }
@@ -317,8 +354,8 @@ h1 {
 }
 .cart--totalitem {
     padding:15px 0;
-    border-top:1px solid #79b9dd;
-    color:#315970;
+    border-top:1px solid var(--text-color0);
+    color:var(--text-color0);
     display:flex;
     justify-content: space-between;
     font-size:15px;
@@ -332,21 +369,23 @@ h1 {
     font-weight: bold;
 }
 .cart--finalizar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
     padding:20px 30px;
-    border-radius:20px;
-    background-color:#48d05f;
-    color:#FFF;
+    border-radius:5px;
+    color:var(--text-color0);
     cursor:pointer;
     text-align:center;
     margin-top:20px;
-    border:2px solid #63f77c;
-    transition: all ease .2s;
+    border:2px solid var(--text-colorRed);
+    transition: ease .3s;
 }
 .cart--finalizar:hover {
-    background-color:#35af4a;
+    background-color:var(--text-colorRed);
+    color: white;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1169px) {
     .pizza-area {
         grid-template-columns: repeat(2, 1fr);
     }

@@ -12,7 +12,7 @@ function selectedItem(event) {
     });
 
     clickedItem.classList.add('active-item');
-    clickedItem.style.color = 'white'; 
+     
 }
 
 

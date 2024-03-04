@@ -63,3 +63,20 @@ let novaPessoa = {
 
 console.log(`Olá meu nome é ${novaPessoa.mostrarNome()} e eu tenho ${novaPessoa.mostrarIdade(16)} anos`);
 
+//--------//
+
+// Funcções que criam objetos
+
+function PersonCreate() {
+    return {
+        name,
+        lastName,
+        age
+    };
+};
+
+const Person = PersonCreate("Matheus", "Brugge", "19")
+const Person2 = PersonCreate("Kleber", "Jhonas", "18")
+console.log(Person);
+console.log(Person2);
+
